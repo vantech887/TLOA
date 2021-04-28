@@ -1,0 +1,17 @@
+redressed{
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet"> 
+ 	font-family: 'Redressed', cursive;
+}
+
+Montserrat{
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Redressed&display=swap" rel="stylesheet"> 
+	font-family: 'Montserrat', sans-serif;
+}
+
+Ravi Prakash{
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap" rel="stylesheet"> 
+	font-family: 'Ravi Prakash', cursive;
+}

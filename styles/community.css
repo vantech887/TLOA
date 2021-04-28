@@ -1,0 +1,212 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/smit-patel-V5aYQSQFzhI-unsplash.jpg');
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*nav section*/
+
+.navbar-custom a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-custom img{
+    -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+    filter: invert(100%);
+}
+
+.navbar-custom{
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.356);
+    margin: 0px 0 0 0;
+    padding: 10px 0;
+}
+
+.navbar-toggler-icon{
+    border-color: #fff;
+}
+
+
+
+/*facebook group section*/
+.fb-group{
+    padding: 50px 0 0 0; 
+    height: 100%;  
+}
+
+.fb-group p,h1,h2,h3,h4{
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 2em;
+}
+
+.fb-group .container p{
+    width: 500px;
+}
+
+.outside{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.fb-group img{
+    border-radius: 10px;
+}
+
+.button{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0;
+}
+
+.button a{
+    transition: transform .2s;
+
+}
+
+.button a:hover{
+    transform: scale(0.9);
+}
+
+.fb-group button{
+    border: 0px;
+    border-radius: 5px;
+    background: rgb(243, 243, 243);
+    padding: 10px;
+}
+
+.fb-group a{
+    text-decoration: none;
+    color: black;
+}
+
+.fb-group a:hover{
+    color: rgb(153, 34, 34);
+}
+
+.fb-heading{
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.fb-header{
+    padding: 30px 0;
+    text-align: center;
+}
+
+/*youtube section*/
+.youtube{
+    margin: 15% 0;
+}
+.youtube img{
+    width: 500px;
+
+}
+
+.youtube-name{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding: 0 0 50px 0;
+}
+
+.youtube button{
+    border: 0px;
+    border-radius: 5px;
+    background: rgb(243, 243, 243);
+    padding: 10px;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+/*footer*/
+footer{
+    background: rgba(0, 0, 0, 0.438);
+    padding: 50px;
+}
+footer p{
+    text-align: center;
+}
+
+
+
+/*mobile view*/
+@media screen and (max-width: 1068px){
+    /*nav bar*/
+    .navbar-custom{
+        background: rgba(0, 0, 0, 0.808);
+        padding: 0.05px;
+    }
+
+    /*fb section*/
+    .fb-group img{
+        display: none;
+    }
+
+    .flexed{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fb-group .container p{
+        width: auto;
+    }
+
+    .fb-group p{
+        margin: 0 auto;
+        font-size: 1rem;
+        max-width: 350px;
+    }
+    
+    .fb-group .button{
+        margin: 10px 0;
+    }
+
+    /*profile*/
+    .profile p{
+        text-align: center;
+        max-width: 800px;
+    }
+
+
+
+    .profile{
+        height: 110vh;
+    }
+
+    .profile button{
+        position: relative;
+        top: -50px;
+    }
+
+    /*youtibe section*/
+    .youtube .container .row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    iframe{
+        max-width: 500px;
+    }
+}

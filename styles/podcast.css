@@ -1,0 +1,105 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.5) ), url("../images/alexander-mils-TdVGcGkb6C8-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar-dark img{
+    -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+    filter: invert(100%);
+}
+
+.opening-audio{
+    background: linear-gradient( rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.5) ), url("../images/monks_3.png");
+    background-position: center;
+    height: 200vh;
+    display: block;
+}
+
+.intro-playlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.719);
+    border-radius: 5px;
+    margin: 10vh 100px;
+}
+
+.intro-playlist-header{
+    margin: 0 auto;
+    padding: 20px;
+    color: rgb(204, 204, 204);
+    font-family: 'Redressed', cursive;
+    font-size: 2.9rem;
+}
+
+audio{
+
+    padding: 0px 50px;
+}
+
+.episode{
+    padding: 20px 50px 0;
+    color: rgb(165, 165, 165);
+    font-family: 'Redressed', cursive;
+
+}
+
+/*schedule*/
+.schedule{
+    background: rgba(0, 0, 0, 0.561);
+    max-width: 1090px;
+    margin: 5vh auto;
+    border-radius: 5px;
+    color: rgb(221, 220, 220);
+    font-family: 'Redressed', cursive;
+    font-size: 1.5rem;
+    height: 20vh;
+}
+
+.schedule h1{
+    padding: 5px 0 0 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.bottom-border{
+    margin: 0 auto;
+    border-bottom: 1px dotted rgb(121, 121, 121);
+    width: 200px;
+}
+
+.days ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 7px;
+}
+
+.days li{
+    list-style: none;
+    border-bottom: 1px dotted rgb(146, 146, 146);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px){
+    .intro-playlist{
+        margin: 10vh 20px;
+    }
+}
+
+footer{
+    background: rgba(0, 0, 0, 0.746);
+    padding: 50px;
+}
+footer p{
+    text-align: center;
+}
+

@@ -1,0 +1,209 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/smit-patel-V5aYQSQFzhI-unsplash.jpg');
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(216, 216, 216);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.opening {
+    background-image: url('../images/alexander-mils-TdVGcGkb6C8-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Redressed', cursive;
+    height:100vh;
+    text-align: center;
+
+}
+
+
+
+.text{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.center {
+    padding: 100px 0;
+    text-align: center;
+    line-height: 10px;
+}
+
+header{
+    position: relative;
+    top: -70px;
+}
+
+header li{
+    font-size: 1.3rem;
+}
+
+.opening-text{
+    letter-spacing: 7px;
+    line-height: 80px;
+    font-size: 250%;
+}
+
+.warrior-svg{
+    width: 100px;
+    height: auto;
+    padding: 50px 0;
+    -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+    filter: invert(100%);
+      
+}
+
+.scroll-down-button{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    padding: 80px 0;
+    transition: transform 1s;
+}
+
+.scroll-down-button:hover{
+    transform: scale(1.2);
+}
+
+p{
+    color: #fff;
+    font-family: 'Redressed', cursive;
+}
+
+
+/* scroll to the next section*/
+html {
+    scroll-behavior: smooth;
+   }
+   
+   
+#down {
+    margin-top: 5%;
+    padding-bottom: 25%;
+} 
+
+/* the center */
+
+.img_and_desc{
+    padding: 100px 0;
+}
+
+.img_and_desc img{
+    width: 500px;
+}
+
+
+.full-story{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.par{
+    font-size: 1.5rem;
+}
+
+footer{
+    background: rgba(0, 0, 0, 0.438);
+    padding: 50px;
+}
+footer p{
+    text-align: center;
+}
+
+/*smaller devices*/
+@media only screen and (max-width: 1000px) {
+    .opening{
+        height: 150vh;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .full-story .container .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .img_and_desc img{
+        width: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .bg-custom{
+        background: rgba(0, 0, 0, 0.335);
+    }
+    header{
+        position: relative;
+        top: -10px;
+    }
+    .opening {
+        color: #fff;
+        font-family: 'Redressed', cursive;
+        height:100vh;
+        text-align: center;
+    
+    }
+
+    .text{
+        border: none;
+        border-radius: 10px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .center {
+        padding: 10px 0;
+        text-align: center;
+        line-height: 5px;
+    }
+
+    .warrior-svg{
+        width: 50px;
+        height: auto;
+        padding: 50px 0;
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+          
+    }
+
+    .opening-text{
+        letter-spacing: 2px;
+        line-height: 30px;
+        font-size: 150%;
+    }
+
+    .scroll-down-button{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        padding: 50px 0;
+        transition: transform 1s;
+        width: 35px;
+    }
+
+    .full-story p{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .img_and_desc img{
+        width: 400px;
+    }
+
+    
+  }

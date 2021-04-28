@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.5) ), url("../images/alexander-mils-TdVGcGkb6C8-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.videos-n-aside{
+    display: flex;
+    margin: 10vh 0;
+}
+
+aside{
+    margin: 0 30px;
+    color: rgb(190, 190, 190);
+}
+
+footer{
+    background: rgba(0, 0, 0, 0.438);
+    padding: 50px;
+}
+footer p{
+    color: rgb(219, 219, 219);
+    text-align: center;
+}
+
+@media screen and (max-width: 1068px){
+    .videos-n-aside{
+        flex-direction: column;
+    }
+
+    .videos-n-aside section{
+        margin: 0 auto;
+    }
+
+    aside{
+        margin: 0 auto;
+        font-size: 1.1rem;
+        padding: 50px;
+    }
+
+    iframe{
+        max-width: 800px;
+    }
+}
