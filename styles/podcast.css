@@ -1,105 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient( rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.5) ), url("../images/alexander-mils-TdVGcGkb6C8-unsplash.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+html{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(235, 235, 235);
 }
 
-.navbar-dark img{
-    -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
-    filter: invert(100%);
+header { 
+    height: 100vh;
+    background: url("../images/ogpodcast.jpg") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.container{
+    max-width: 90%;
 }
 
-.opening-audio{
-    background: linear-gradient( rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.5) ), url("../images/monks_3.png");
-    background-position: center;
-    height: 200vh;
-    display: block;
-}
 
-.intro-playlist{
+.opener{
+    color: rgb(221, 221, 221);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.719);
-    border-radius: 5px;
-    margin: 10vh 100px;
-}
-
-.intro-playlist-header{
-    margin: 0 auto;
-    padding: 20px;
-    color: rgb(204, 204, 204);
-    font-family: 'Redressed', cursive;
-    font-size: 2.9rem;
-}
-
-audio{
-
-    padding: 0px 50px;
-}
-
-.episode{
-    padding: 20px 50px 0;
-    color: rgb(165, 165, 165);
-    font-family: 'Redressed', cursive;
-
-}
-
-/*schedule*/
-.schedule{
-    background: rgba(0, 0, 0, 0.561);
-    max-width: 1090px;
-    margin: 5vh auto;
-    border-radius: 5px;
-    color: rgb(221, 220, 220);
-    font-family: 'Redressed', cursive;
-    font-size: 1.5rem;
-    height: 20vh;
-}
-
-.schedule h1{
-    padding: 5px 0 0 0;
     text-align: center;
-    font-size: 3rem;
-}
-
-.bottom-border{
+    flex-direction: column;
+    max-width: 400px;
     margin: 0 auto;
-    border-bottom: 1px dotted rgb(121, 121, 121);
-    width: 200px;
+    letter-spacing: .19rem;
+    line-height: 2em;
 }
 
-.days ul{
+.text-header h1{
+    font-size: 2.1rem;
+    font-weight: bolder;
+    padding: 40px;
+    line-height: 1.5em;
+    
+}
+
+.text-header h2{
+    border-bottom: 1px dotted rgb(228, 228, 228);
+    width: 200px;
+    margin: 0 auto;
+}
+
+.opener ul{
     display: flex;
     justify-content: space-around;
-    padding: 7px;
+    padding: 15px;
 }
 
-.days li{
+.opener li{
     list-style: none;
-    border-bottom: 1px dotted rgb(146, 146, 146);
-    cursor: pointer;
+    border-bottom: 1px dotted rgb(228, 228, 228);
+    padding: 10px;
 }
 
+/*scroll to bottom*/
+.arrow {
+    border: solid rgb(53, 53, 53);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    margin: 50px 0;
+    transition: transform .5s;
+  }
 
-@media screen and (max-width: 800px){
-    .intro-playlist{
-        margin: 10vh 20px;
-    }
+  .arrow:hover{
+     transform: scale(1.5);
+  }
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+html {
+    scroll-behavior: smooth;
+   }
+   
+   a {
+    text-decoration: none;
+    color: black;
+   } 
+   
+   #down {
+    margin-top: 20vh;
+    padding-bottom: 25%;
+   } 
+
+
+/*podcasts*/
+
+.casts{
+    background-color: rgb(209, 209, 209);
+    margin: 15px auto;
+    padding: 30px 20px;
+    border-radius: 5px;
+    width: 100vw;
 }
 
-footer{
-    background: rgba(0, 0, 0, 0.746);
-    padding: 50px;
+.casts audio{
+    width: 75vw;
 }
-footer p{
+
+.casts h4{
+    font-size: .9rem;
+    padding: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.casts h1{
+    margin: 0 auto;
     text-align: center;
+    padding: 20px;
+    border-bottom: 1px dotted black;
+    width: 250px;
 }
 
+/*footer*/
+footer{
+    padding: 20px;
+    background: rgb(6, 6, 6);
+    color: rgb(233, 233, 233);
+}
+
+.socials a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.socials a:hover{
+    color: rgb(206, 209, 211);
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+}
+
+.socials i{
+    padding: 20px;
+    font-size: 1.6rem;
+}
