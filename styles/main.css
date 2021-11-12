@@ -113,7 +113,8 @@ header {
 /* counter */
 
 .visitor-counter {
-    margin: 10 auto;   
+    display: flex;
+    justify-content: center;
 }
 
 /*footer*/
