@@ -110,6 +110,12 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* counter */
+
+.counter {
+    margin: 10 auto;   
+}
+
 /*footer*/
 footer{
     padding: 20px;
